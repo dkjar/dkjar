@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/wel_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/Wel_TextContainer">
+
+        <TextView
+            style="?attr/welcomeLargeTextStyle"
+            android:id="@+id/wel_title"
+            android:text="hello"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/wel_text_primary_theme_light" />
+
+        <TextView
+            style="?attr/welcomeNormalTextStyle"
+            android:id="@+id/wel_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/wel_indicator_color_primary_theme_light" />
+
+    </LinearLayout>
+
+</LinearLayout>

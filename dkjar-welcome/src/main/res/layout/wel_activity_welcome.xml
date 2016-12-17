@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/wel_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dkjar.welcome.WelcomeActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@color/wel_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="?attr/welcomeLayoutFitsSystemWindows">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/wel_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <View
+            android:background="@color/wel_indicator_color_primary_theme_light"
+            android:layout_height="1px"
+            android:layout_width="match_parent"/>
+
+        <com.dkjar.welcome.SimpleViewPagerIndicator
+            android:id="@+id/wel_pager_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            style="?attr/welcomeIndicatorStyle"/>
+
+    </LinearLayout>
+</FrameLayout>

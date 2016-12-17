@@ -1,0 +1,1 @@
+include ':app', ':querycomplete', ':dkjar-common', ':dkjar-welcome'
